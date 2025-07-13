@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Football Highlights</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      color: #4CAF50;
+      margin-bottom: 20px;
+    }
+    iframe {
+      width: 100%;
+      max-width: 800px;
+      height: 760px;
+      border: none;
+      display: block;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>⚽ Football Highlights & Match Analysis</h1>
+
+  <!-- ScoreBat Live Highlights Widget -->
+  <iframe src="https://www.scorebat.com/embed/videofeed/?token=MjIxNDM1XzE3NTIzOTUwODVfMWM0NDQzMDYxMjcxYmNlODdjZjg3YjZjMzRiY2M1ZjkxM2JlY2I1Yg=="
+          frameborder="0" allowfullscreen allow='autoplay; fullscreen'
+          class="_scorebatEmbeddedPlayer_">
+  </iframe>
+
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://www.scorebat.com/embed/embed.js?v=arrv';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'scorebat-jssdk'));
+  </script>
+
+</body>
+</html>
