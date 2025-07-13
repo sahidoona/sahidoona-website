@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Daily Quran & Hadith</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+      max-width: 700px;
+      margin: auto;
+      background: #f9f9f9;
+    }
+    h1 {
+      color: #4CAF50;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .section {
+      margin-bottom: 40px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #444;
+      margin-bottom: 10px;
+    }
+    .arabic {
+      font-size: 22px;
+      direction: rtl;
+      text-align: right;
+      margin-bottom: 12px;
+      color: #222;
+    }
+    .english {
+      font-size: 18px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📅 Daily Quran Verse & Hadith</h1>
+
+  <div class="section" id="quran">
+    <h2>🌙 Quran</h2>
+    <p class="arabic" id="q-arab">Loading Arabic verse...</p>
+    <p class="english" id="q-eng">Loading English translation...</p>
+  </div>
+
+  <div class="section" id="hadith">
+    <h2>🕋 Hadith</h2>
+    <p class="english" id="h-eng">Loading hadith...</p>
+  </div>
+
+  <script>
+    // Random Quran Verse
+    fetch('https://api.alquran.cloud/v1/ayah/random/quran-uthmani')
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('q-arab').innerText = data.data.text;
+        return fetch('https://api.alquran.cloud/v1/ayah/' + data.data.number + '/en.asad');
+      })
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('q-eng').innerText = data.data.text;
+      });
+
+    // Random Hadith
+    fetch('https://hadeethenc.com/api/v1/hadeeths/list/?language=en&category_id=5&page=1&per_page=50')
+      .then(res => res.json())
+      .then(json => {
+        let list = json.data;
+        let item = list[Math.floor(Math.random() * list.length)];
+        document.getElementById('h-eng').innerText = item.title;
+      });
+  </script>
+
+</body>
+</html>
