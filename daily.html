@@ -1,82 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Daily Quran & Hadith</title>
+  <title>Daily Reminder – Sahidoona</title>
+  <meta name="description" content="Daily Islamic reminders from Sahidoona – duas, hadith, Quran and spiritual reflections.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-adsense-account" content="ca-pub-1835470952853856">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
     body {
-      font-family: sans-serif;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
       padding: 20px;
-      max-width: 700px;
-      margin: auto;
-      background: #f9f9f9;
+      color: #333;
     }
-    h1 {
-      color: #4CAF50;
+    header {
       text-align: center;
       margin-bottom: 30px;
     }
-    .section {
-      margin-bottom: 40px;
+    h1 {
+      font-size: 36px;
+      color: #4CAF50;
+    }
+    section {
+      background-color: #ffffff;
+      border-radius: 10px;
       padding: 20px;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+      max-width: 800px;
+      margin: 0 auto 40px auto;
+      text-align: left;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
     }
     h2 {
-      color: #444;
-      margin-bottom: 10px;
+      color: #4CAF50;
     }
-    .arabic {
-      font-size: 22px;
-      direction: rtl;
-      text-align: right;
-      margin-bottom: 12px;
+    p {
+      line-height: 1.8;
+      font-size: 18px;
+    }
+    strong {
       color: #222;
     }
-    .english {
-      font-size: 18px;
-      color: #333;
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 16px;
     }
   </style>
 </head>
 <body>
 
-  <h1>📅 Daily Quran Verse & Hadith</h1>
+  <header>
+    <h1>🌙 Daily Reminder</h1>
+    <p>One message a day can uplift your faith and heart 💚</p>
+  </header>
 
-  <div class="section" id="quran">
-    <h2>🌙 Quran</h2>
-    <p class="arabic" id="q-arab">Loading Arabic verse...</p>
-    <p class="english" id="q-eng">Loading English translation...</p>
-  </div>
+  <!-- Daily Blog Post: 3 Powerful Short Duas -->
+  <section>
+    <h2>📿 3 Powerful Short Duas for Daily Life</h2>
 
-  <div class="section" id="hadith">
-    <h2>🕋 Hadith</h2>
-    <p class="english" id="h-eng">Loading hadith...</p>
-  </div>
+    <p><strong>1. Before Sleep:</strong><br>
+    <em>“Bismika Allahumma amootu wa ahyaa.”</em><br>
+    <span style="color: #555;">(In Your name, O Allah, I die and I live)</span></p>
 
-  <script>
-    // Random Quran Verse
-    fetch('https://api.alquran.cloud/v1/ayah/random/quran-uthmani')
-      .then(res => res.json())
-      .then(data => {
-        document.getElementById('q-arab').innerText = data.data.text;
-        return fetch('https://api.alquran.cloud/v1/ayah/' + data.data.number + '/en.asad');
-      })
-      .then(res => res.json())
-      .then(data => {
-        document.getElementById('q-eng').innerText = data.data.text;
-      });
+    <p><strong>2. During Worry:</strong><br>
+    <em>“Hasbunallahu wa ni‘mal wakeel.”</em><br>
+    <span style="color: #555;">(Allah is sufficient for us, and He is the best disposer of affairs)</span></p>
 
-    // Random Hadith
-    fetch('https://hadeethenc.com/api/v1/hadeeths/list/?language=en&category_id=5&page=1&per_page=50')
-      .then(res => res.json())
-      .then(json => {
-        let list = json.data;
-        let item = list[Math.floor(Math.random() * list.length)];
-        document.getElementById('h-eng').innerText = item.title;
-      });
-  </script>
+    <p><strong>3. When Leaving the House:</strong><br>
+    <em>“Bismillah, tawakkaltu ‘ala Allah.”</em><br>
+    <span style="color: #555;">(In the name of Allah, I place my trust in Allah)</span></p>
+
+    <p style="margin-top: 20px;">Let’s remind ourselves and others to make these du’as a part of our routine. They’re short, powerful, and carry great reward.</p>
+
+    <p style="font-weight: bold; color: #388e3c;">💚 May your day be filled with dhikr and barakah.</p>
+  </section>
+
+  <footer>
+    <p>Visit <a href="https://www.sahidoona.co.ke" target="_blank">www.sahidoona.co.ke</a> for more reminders, Quran stream, and online tools.</p>
+  </footer>
 
 </body>
 </html>
