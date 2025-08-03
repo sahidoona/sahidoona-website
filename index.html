@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Sahidoona Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- SEO & Meta -->
   <meta name="description" content="Sahidoona blog shares Quran, Hadith, football, games and smart online income ideas.">
@@ -10,6 +11,19 @@
   <meta name="author" content="Sahidoona">
   <meta name="google-site-verification" content="aoeLlhM4F0DAuRjOXQXWxvun8yogRO0D6l1k9dS4tNY" />
   <meta name="google-adsense-account" content="ca-pub-1835470952853856">
+
+  <!-- Open Graph for Sharing -->
+  <meta property="og:title" content="Sahidoona | Quran, Football & Online Hustles">
+  <meta property="og:description" content="Visit Sahidoona.co.ke for spiritual guidance, football highlights, free games & legit online income tips.">
+  <meta property="og:image" content="https://sahidoona.co.ke/logo.jpg">
+  <meta property="og:url" content="https://sahidoona.co.ke/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sahidoona | Kenya's #1 Faith + Football + Hustle Site">
+  <meta name="twitter:description" content="Get Quranic reminders, game downloads, football content & make money online smartly.">
+  <meta name="twitter:image" content="https://sahidoona.co.ke/logo.jpg">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
@@ -34,6 +48,8 @@
       padding: 20px;
       text-align: center;
       background-color: #f9f9f9;
+      max-width: 100%;
+      overflow-x: hidden;
     }
     nav {
       background: #4CAF50;
@@ -79,34 +95,48 @@
   <h1>Welcome to Sahidoona!</h1>
   <p>Explore blog posts, spiritual content, football, and smart earning tips from Kenya and beyond.</p>
 
-  <!-- Blog Post: One Good Deed -->
+  <!-- Blog Highlight -->
   <section style="padding: 20px; background-color: #ffffff; border-radius: 10px; margin: 30px auto; max-width: 800px; text-align: left;">
     <h2 style="color: #2e7d32;">🌟 The Power of One Good Deed Today</h2>
-    <p>
-      In a world filled with distractions, taking one small moment to connect with Allah can change your entire day — or your life.
-    </p>
-    <p>
-      Whether it’s a short dua, reciting one verse of the Quran, or sharing something beneficial with a friend, every good deed is recorded.
-    </p>
-    <p>
-      As Muslims, we're reminded that Allah multiplies rewards for even the smallest sincere act. So, pause for a moment and say “SubhanAllah.” Share a hadith. Smile at someone. Visit 
-      <a href="https://www.sahidoona.co.ke" target="_blank">sahidoona.co.ke</a> and read today's Quran verse or listen to Quran Live.
-    </p>
-    <p>
-      Let’s use technology to draw closer to our faith — not further.
-    </p>
+    <p>In a world filled with distractions, taking one small moment to connect with Allah can change your entire day — or your life.</p>
+    <p>Whether it’s a short dua, reciting one verse of the Quran, or sharing something beneficial with a friend, every good deed is recorded.</p>
+    <p>Visit <a href="https://www.sahidoona.co.ke" target="_blank">sahidoona.co.ke</a> and read today's Quran verse or listen to Quran Live.</p>
     <p style="font-weight: bold; color: #388e3c;">💚 May your day be filled with barakah.</p>
   </section>
 
-  <!-- YouTube Channel Video Embed -->
+  <!-- Trending Topics -->
+  <section style="margin: 40px auto; max-width: 800px; background: #fff; padding: 20px; border-radius: 10px;">
+    <h2 style="color: #2e7d32;">🔥 Trending on Sahidoona</h2>
+    <ul style="list-style: none; padding: 0; line-height: 2;">
+      <li><a href="earn-online.html" style="text-decoration: none; color: #4CAF50;">💰 How to Earn Ksh 1,000 Daily Online</a></li>
+      <li><a href="dua-success.html" style="text-decoration: none; color: #4CAF50;">📿 Dua for Success in Life & Exams</a></li>
+      <li><a href="football-highlights.html" style="text-decoration: none; color: #4CAF50;">⚽ Latest Football Highlights</a></li>
+      <li><a href="youtube-tips.html" style="text-decoration: none; color: #4CAF50;">🎥 YouTube Channel Growth Tips (Kenya)</a></li>
+    </ul>
+  </section>
+
+  <!-- Daily Islamic Quote -->
+  <div style="max-width: 800px; margin: 30px auto; background: #fefefe; padding: 20px; border-left: 5px solid #4CAF50; border-radius: 10px; font-size: 20px;">
+    <script>
+      const quotes = [
+        "“Indeed, with hardship comes ease.” — [Qur'an 94:6]",
+        "“Say, ‘Nothing will ever happen to us except what Allah has decreed for us.’” — [Qur'an 9:51]",
+        "“The best among you are those who learn the Qur'an and teach it.” — [Bukhari]",
+        "“Whoever places their trust in Allah, He is sufficient for them.” — [Qur'an 65:3]",
+        "“Every soul shall taste death.” — [Qur'an 3:185]"
+      ];
+      const quote = quotes[Math.floor(Math.random() * quotes.length)];
+      document.write("<p style='color:#333;'>" + quote + "</p>");
+    </script>
+  </div>
+
+  <!-- YouTube Embed -->
   <section style="margin: 40px auto; max-width: 800px; background: #fff; padding: 20px; border-radius: 10px;">
     <h2 style="color: #c4302b;">🎥 Watch on Sahidoona YouTube</h2>
-    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin-top: 20px;">
-      <iframe 
-        src="https://www.youtube.com/embed?listType=user_uploads&list=UCjd-rWNsIZVvWfOVmiioVYA"
-        frameborder="0"
-        allowfullscreen
-        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+      <iframe src="https://www.youtube.com/embed?listType=user_uploads&list=UCjd-rWNsIZVvWfOVmiioVYA"
+              frameborder="0" allowfullscreen
+              style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
       </iframe>
     </div>
     <p style="margin-top: 20px;">
@@ -117,6 +147,26 @@
     </p>
   </section>
 
+  <!-- Popular Tags -->
+  <div style="text-align: center; margin-top: 30px;">
+    <p style="font-weight: bold;">📌 Popular Tags:</p>
+    <div style="font-size: 16px; line-height: 2;">
+      <a href="blog.html" style="margin: 5px; color: #4CAF50;">#Quran</a>
+      <a href="blog.html" style="margin: 5px; color: #4CAF50;">#Hadith</a>
+      <a href="games.html" style="margin: 5px; color: #4CAF50;">#FreeGames</a>
+      <a href="earn-online.html" style="margin: 5px; color: #4CAF50;">#EarnOnline</a>
+      <a href="football.html" style="margin: 5px; color: #4CAF50;">#Football</a>
+      <a href="daily.html" style="margin: 5px; color: #4CAF50;">#Reminder</a>
+    </div>
+  </div>
+
+  <!-- Search Box -->
+  <div style="max-width: 600px; margin: 40px auto; text-align: center;">
+    <input type="text" placeholder="Search Sahidoona..." 
+           style="width: 90%; padding: 12px; border-radius: 5px; border: 1px solid #ccc; font-size: 18px;" 
+           onkeyup="alert('Search feature coming soon!')">
+  </div>
+
   <!-- AdSense -->
   <div style="text-align:center; margin:30px auto;">
     <ins class="adsbygoogle"
@@ -125,23 +175,14 @@
          data-ad-slot="3694175687"
          data-ad-format="auto"
          data-full-width-responsive="true"></ins>
-    <script>
-         (adsbygoogle = window.adsbygoogle || []).push({});
-    </script>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
-  <!-- CTA Button -->
-  <a href="games.html" style="display:inline-block; margin-top:20px; padding:10px 20px; background:#4CAF50; color:white; text-decoration:none; border-radius:5px; font-size:18px;">
-    🎮 Play & Earn
-  </a>
-
-  <p style="margin-top:40px;">May Allah bless you for visiting 💚</p>
-
-  <!-- Milestone Badge -->
-  <div style="text-align: center; padding: 10px; background: #f0f9f5; border: 2px solid #4CAF50; border-radius: 8px; font-family: Poppins, sans-serif; margin: 40px auto 20px; max-width: 300px;">
-    <div style="font-size: 24px; color: #2e7d32; margin-bottom: 6px;">✅ 100 Visitors!</div>
-    <div style="font-size: 18px; color: #555; margin-bottom: 12px;">Thanks for supporting <strong>sahidoona.co.ke</strong></div>
-    <div style="display: flex; justify-content: center; align-items: center; gap: 8px; margin-bottom: 12px;">
+  <!-- Visitor Milestone -->
+  <div style="text-align: center; padding: 10px; background: #f0f9f5; border: 2px solid #4CAF50; border-radius: 8px; margin: 40px auto 20px; max-width: 300px;">
+    <div style="font-size: 24px; color: #2e7d32;">✅ 100 Visitors!</div>
+    <div style="font-size: 18px; color: #555;">Thanks for supporting <strong>sahidoona.co.ke</strong></div>
+    <div style="display: flex; justify-content: center; gap: 8px; margin-top: 12px;">
       <span style="font-size: 28px;">🕋</span>
       <span style="font-size: 28px;">⚽</span>
       <span style="font-size: 28px;">🎮</span>
@@ -149,31 +190,19 @@
     <div style="font-size: 14px; color: #777;">July 2025</div>
   </div>
 
-  <!-- Visitor Counter -->
+  <!-- Stats4U Visitor Counter -->
   <div style="margin-top: 30px;">
     <script type="text/javascript">
       if(typeof(window["s4uid"]) == "undefined"){
-        var s4uid = new Array();
-        var s4u_paramsarr = new Array();
-        var s4u_sp = new Array();
-        var s4uc = 0;
-        var acts4uc = 0;
-        var dAsd = new Array();
-        var temp1 = 0;
+        var s4uid = new Array(); var s4u_paramsarr = new Array(); var s4u_sp = new Array(); var s4uc = 0;
       }
       (function() {
         s4uid[s4uc] = "12116386";
-        s4u_paramsarr[s4uc] = new Array();
-        s4u_paramsarr[s4uc]["s4ustyleid"] = "4";
-        s4u_sp[s4uc] = new Array();
+        s4u_paramsarr[s4uc] = new Array(); s4u_paramsarr[s4uc]["s4ustyleid"] = "4"; s4u_sp[s4uc] = new Array();
         document.write("<span id=s4u_cp" + s4uc + "></span>");
-        var s4u = document.createElement("script");
-        s4u.type = "text/javascript";
-        s4u.async = true;
-        s4u.src = (document.location.protocol == "https:" ? "https://www" : "http://www") + ".stats4u.net/s4u.js";
-        var x = document.getElementsByTagName("script")[0];
-        x.parentNode.insertBefore(s4u, x);
-        s4uc++;
+        var s4u = document.createElement("script"); s4u.type = "text/javascript"; s4u.async = true;
+        s4u.src = "https://www.stats4u.net/s4u.js"; var x = document.getElementsByTagName("script")[0];
+        x.parentNode.insertBefore(s4u, x); s4uc++;
       })();
     </script>
     <noscript>
@@ -183,11 +212,10 @@
     </noscript>
   </div>
 
-  <!-- WhatsApp Floating Button -->
+  <!-- WhatsApp Chat -->
   <a href="https://wa.me/254706654969" target="_blank" style="position:fixed;bottom:20px;right:20px;z-index:100;">
     <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" 
-         alt="Chat with us on WhatsApp" 
-         style="width:60px;height:60px;">
+         alt="Chat with us on WhatsApp" style="width:60px;height:60px;">
   </a>
 
 </body>
